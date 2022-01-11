@@ -46,9 +46,10 @@ function draw() {
   background(0);
   boy.x = World.mouseX;
 
-  if (path.y < 10){
-    path.y = height/2;
-  }
+if(path.y> height){ 
+  path.y = height/2 
+}
+
   
   edges= createEdgeSprites();
   boy.collide(edges);
